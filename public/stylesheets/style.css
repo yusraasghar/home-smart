@@ -6,7 +6,9 @@ body {
   h1,h2,h3,h4,h5,h6 {
     color: #000000;
   }
-  
+  .row{
+  margin-right:0px;
+}
   a {
     color: #000000;
     transition: all .5s ease;
@@ -94,6 +96,7 @@ body {
   background-size: cover;
   background-position: center center;
 }
+ .section-agents,.section-services{margin-top:150px;}
 
 /*------/ Display Table & Table Cell /------*/
 
