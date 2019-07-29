@@ -8,7 +8,9 @@ const logger = require('morgan');
 const app = express();
 
 // Socket.io
-const server = app.listen(7860);
+const port = process.env.URL || 7860;
+app.set(port, port);
+const server = app.listen(port);
 const socket = require('socket.io');
 const io = socket.listen(server);
 
