@@ -307,7 +307,7 @@ function getItem(id){
             <p>Set Temperature</p>
             <!--Switch-->
             <div class="value-button" id="decrease" value="Decrease Value">-</div>
-            <input type="number" id="number" name="temperature" value="16"/>
+            <input type="number" id="number" name="temperature" value="<%=getItem('5d36f9073a64080990b2daac').temperature %>"/>
             <div class="value-button" id="increase" value="Increase Value">+</div>
         </div>
         <div class="modal-footer">
@@ -352,7 +352,7 @@ function getItem(id){
             <p>Set Volume</p>
             <p>
                 <img src="http://i.imgur.com/yOadS1c.png" id="minus1" width="20" height="20" class="minus"/>
-                <input id="qty1" type="text" value="12" name="volume" class="qty"/>
+                <input id="qty1" type="text" value="<%=getItem('5d3700a3652da01bcc1bd7ea').volume %>" name="volume" class="qty"/>
                     <img id="add1" src="http://i.imgur.com/98cvZnj.png" width="20" height="20" class="add"/>
             </p>
             <p>Set Channel</p>
@@ -558,15 +558,14 @@ function getItem(id){
             $("[data-id='"+data.deviceId+"']").find("[name='switch'][type='checkbox']").removeAttr('checked');
           }
           if(itemData.temperature!=undefined){
-            $("[data-id='"+data.deviceId+"']").find("[name='temperature'][type='number']").prop('val()','itemData.temperature');
-
+            $("[data-id='"+data.deviceId+"']").find("[name='temperature']").prop('value',itemData.temperature);
           }
           if(itemData.volume!=undefined){
-            $("[data-id='"+data.deviceId+"']").find("[name='volume'][type='number']").prop('val()','itemData.volume');
+            $("[data-id='"+data.deviceId+"']").find("[name='volume']").prop('value',itemData.volume);
           }
 
           if(itemData.channel!=undefined){
-            $("[data-id='"+data.deviceId+"']").find("[name='channel'][type='number']").prop('val()','itemData.channel');
+            $("[data-id='"+data.deviceId+"']").find("[name='channel']").prop('value',itemData.channel);
           }
              });
   });
