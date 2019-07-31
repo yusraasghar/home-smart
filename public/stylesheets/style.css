@@ -1160,15 +1160,14 @@ body {
 
 /*Thermostat*/
 .value-button {
-  display: inline-block;
+  display: inline;
   border: 1px solid #ddd;
   margin: 0px;
-  width: 40px;
-  height: 20px;
   text-align: center;
-  vertical-align: middle;
+  padding:9px;
   padding: 11px 0;
-  background: #eee;
+  color:#fff;
+  background-color:#C0C0C0;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1372,15 +1371,13 @@ animation-play-state: paused;
 }
 
 .value-button {
-  display: inline-block;
+  display: inline;
   border: 1px solid #ddd;
   margin: 0px;
-  width: 40px;
-  height: 20px;
   text-align: center;
   vertical-align: middle;
-  padding: 11px 0;
-  background: #eee;
+  padding:9px;
+  background-color: #C0C0C0;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1406,6 +1403,7 @@ form #decrease {
 form #increase {
   margin-left: -4px;
   border-radius: 0 8px 8px 0;
+
 }
 
 form #input-wrap {
